@@ -1,12 +1,12 @@
-## DOT NET 7
+# .NET 7 ORDER BY LINQ BENCHMARK
 
-# commands
+## commands
 
-- dotnet new console -n Ordering
+- dotnet new console
 - dotnet add package BenchmarkDotNet --version 0.13.2
-- dotnet run --configuration Release or dotnet -c Release
+- dotnet run --configuration Release
 
-# run
+## Program.cs
 
 ```csharp
 
@@ -14,7 +14,7 @@ BenchmarkRunner.Run<BenchmarksList>();
 
 ```
 
-# class Benchmarks
+## Benchmarks.cs
 
 ```ini
 
@@ -34,7 +34,7 @@ AMD Ryzen 7 3800X, 1 CPU, 16 logical and 8 physical cores
 | OrderByDesc | 4.596 μs | 0.0886 μs | 0.0910 μs |   1.83 KB |
 | OrderDesc   | 4.416 μs | 0.0425 μs | 0.0397 μs |   1.41 KB |
 
-# class BenchmarksArray
+## BenchmarksArray.cs
 
 ```ini
 
@@ -54,7 +54,7 @@ AMD Ryzen 7 3800X, 1 CPU, 16 logical and 8 physical cores
 | Sort     | 2.818 μs | 0.0198 μs | 0.0185 μs |     576 B |
 | SpanSort | 2.888 μs | 0.0307 μs | 0.0287 μs |    1000 B |
 
-# class BenchmarksList
+## BenchmarksList.cs
 
 ```ini
 
@@ -73,7 +73,7 @@ AMD Ryzen 7 3800X, 1 CPU, 16 logical and 8 physical cores
 | Order   | 6.696 μs | 0.0694 μs | 0.0649 μs |    1632 B |
 | Sort    | 2.928 μs | 0.0061 μs | 0.0054 μs |     608 B |
 
-# class BenchmarksWithText
+## BenchmarksWithText.cs
 
 ```ini
 
