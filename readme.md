@@ -1,10 +1,11 @@
-# .NET 7 ORDER BY LINQ BENCHMARK
+# .NET 7 ORDER LINQ BENCHMARK
 
 ## commands
 
-- dotnet new console
+- dotnet new console -n Ordering
 - dotnet add package BenchmarkDotNet --version 0.13.2
 - dotnet run --configuration Release
+- dotnet run --c Release
 
 ## Program.cs
 
